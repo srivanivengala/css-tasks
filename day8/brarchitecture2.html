@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+         margin-left:5vw;
+      }
+        .all{
+            display:grid;
+            grid-template-columns: auto auto auto auto;
+            margin-left:5vw;
+            margin-right:5vw;
+            
+        }
+        .container{
+                position:relative;
+                text-align:top-left;       
+        }
+        .text{
+            position:absolute;
+            top:0px;
+            background-color:black; 
+            color:white;
+        }
+        .nav{
+         background-color: white;
+         display:flex;
+         justify-content: space-between;
+         font-size:2vw;
+         position:sticky;
+         top:0;
+
+
+        }
+        .nav2{
+         display: flex;
+         /* justify-content: space-between; */
+            gap: 40px;
+            
+        }
+        a{
+         text-decoration: none;
+         color: black;
+        }
+        a:hover{
+         background-color: grey;
+        }
+        .img1{
+         width:100vw;
+         height:50vh;
+        }
+        .first{
+         position:relative
+        }
+        .text1{
+         position:absolute;
+         top:20vw;
+         left:35vw;
+         color:white;
+         font-size: 5vw;
+         
+        }
+        .br{
+        background-color: black;
+        color:white;
+        padding:2vw;
+        }
+        .wholecard{
+         margin-left:5vw;
+         display:grid;
+         grid-template-columns:auto auto auto auto; 
+         
+        }
+        .card{
+        
+         width:20vw;
+         height:60vh;
+        }
+        .cardimg{
+         width:20vw;
+         height:29vh;
+        }
+        .button{
+         width:20vw;
+         height:4vh;
+         background-color:antiquewhite;
+        }
+        .button2{
+         color:white;
+        }
+        input{
+         width:100vw;
+         height:5vh;
+        }
+        .footer{
+            background-color: black;
+            color:white;
+            width:100vw;
+            height:20vh;
+            align-content:center;
+        }
+        .css{
+         color:white;
+         text-decoration: underline;
+        }
+        .lastimg{
+         width:100vw;
+         height:60vh;
+        }
+        @media only screen and (width>900px){
+           .img1{
+            width:100vw;
+            height:80vh;
+           }
+         }
+         @media only screen and (width>600px) and (width<900px){
+          .all{
+            grid-template-columns: auto auto;
+          }
+          .wholecard{
+              grid-template-columns: auto auto;
+          }
+          .card{
+            width:40vw;
+            height:60vh
+          }
+          .cardimg{
+            width:40vw;
+            height:29vj;
+          }
+          .button{
+            width:40vw;
+            height:4vh;
+          }
+         }
+         @media only screen and (width<600px){
+          .all{
+            grid-template-columns: auto;
+          }
+          .wholecard{
+              grid-template-columns: auto ;
+              margin-left:20vw;
+          }
+          .card{
+            width:50vw;
+            height:60vh
+          }
+          .cardimg{
+            width:50vw;
+            height:29vj;
+          }
+          .button{
+            width:50vw;
+            height:4vh;
+          }
+         }
+    </style>
+</head>
+<body>
+
+   <div class="nav">
+      <a href="#architect"><b>&nbsp;&nbsp;BR</b> Architects</a>
+      <div class="nav2">
+         <a href="#projects">Projects</a>
+         <a href="#about">About</a>
+         <a href=contact>Contact</a>
+      </div>
+   </div>
+
+  <br> 
+    <article id="architect" class="first">
+       <img src="https://www.w3schools.com/w3images/architect.jpg" class="img1">
+      <div class="text1">
+           <span class="br">BR</span>
+           <span>Architects</span>
+      </div>
+   </article>
+   <br>
+   <article id="projects">
+  <h2>Projects</h2>
+
+<div class="all">
+    <div class="container">
+        <img src="https://www.w3schools.com/w3images/house5.jpg"  style="width:80%;">
+        <div class="text">Summer House</div>
+    </div>
+    <div class="container">
+        <img src="https://www.w3schools.com/w3images/house2.jpg" style="width:80%;">
+        <div class="text">Brick House</div>
+     </div>
+
+     <div class="container">
+        <img src="https://www.w3schools.com/w3images/house3.jpg" style="width:80%;">
+        <div class="text">Renovated</div>
+     </div>
+     <div class="container">
+        <img src="https://www.w3schools.com/w3images/house4.jpg" style="width:80%;">
+        <div class="text">Barn House</div>
+     </div>
+   </div>
+   <div class="all">
+     <div class="container">
+        <img src="https://www.w3schools.com/w3images/house2.jpg" style="width:80%;">
+        <div class="text">Summer House</div>
+     </div>
+     <div class="container">
+        <img src="https://www.w3schools.com/w3images/house5.jpg" style="width:80%;">
+        <div class="text">Brick House</div>
+     </div>
+     <div class="container">
+        <img src="https://www.w3schools.com/w3images/house4.jpg" style="width:80%;">
+        <div class="text">Renovated</div>
+     </div>
+     <div class="container">
+        <img src="https://www.w3schools.com/w3images/house3.jpg" style="width:80%;">
+        <div class="text">Barn House</div>
+     </div>
+
+</div>
+</article>
+
+
+
+
+<!-- About -->
+ <article id="about">
+      
+   <div class="wholeabout">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   </div>
+   
+   <div class="wholecard">
+      <!-- card1 -->
+      <div class="card">
+         <img src="https://www.w3schools.com/w3images/team2.jpg" class="cardimg">
+         <br><br>
+         <b> John Doe</b>
+         <p style="color:grey">CEO & Founder</p>
+
+         Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+         <p>
+         <button class="button">Contact</button></p>
+      </div>
+ <!-- card2 -->
+
+      <div class="card">
+         <img src="https://www.w3schools.com/w3images/team1.jpg" class="cardimg">
+         <br><br>
+         <b> Jane Doe</b>
+         <p style="color:grey">Architect</p>
+
+         Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+         <p>
+         <button class="button">Contact</button></p>
+      </div>
+    
+    
+    <!-- Card3 -->
+      <div class="card">
+         <img src="https://www.w3schools.com/w3images/team3.jpg" class="cardimg">
+         <br><br>
+         <b> Mike Ross</b>
+         <p style="color:grey">Architect</p>
+
+         Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+         <p>
+         <button class="button">Contact</button></p>
+      </div>
+
+    <!-- card4 -->
+      <div class="card">
+         <img src="https://www.w3schools.com/w3images/team4.jpg" class="cardimg">
+         <br><br>
+         <b> Dan Star</b>
+         <p style="color:grey">Architect</p>
+
+         Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+         <p>
+         <button class="button">Contact</button></p>
+      </div>
+
+   </div>
+   </article>
+
+
+
+   <article id="contact" class="contact">
+     <h2>Contact</h2>
+     <p>Lets get in touch and talk about your next project.</p>
+     <input type="text" placeholder="Name"><br><br>
+     <input type="text" placeholder="Email"><br><br>
+     <input type="text" placeholder="Subject"><br><br>
+     <input type="text" placeholder="Comment"><br><br>
+     <button style="background-color: black;" class="button2">Send Message</button>
+    <br><br>
+   </article>
+   <img src="https://www.w3schools.com/w3images/map.jpg" class="lastimg">
+    <br><br>
+    <center>
+      <p class="footer">Powered by
+       <a href="https://www.w3schools.com/w3css/w3css_templates.asp" class="css">w3.css</a></p>
+       
+     </center>
+</body>
+</html>

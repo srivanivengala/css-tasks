@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:whitesmoke ;
+        }
+        nav{
+            background-color: whitesmoke;
+            display:flex;
+            justify-content: space-between;
+            position:sticky;
+            top:0px;
+            font-size: 150%;
+            
+        }
+        a:hover{
+            background-color: grey;
+        }
+        .nav2{
+            display:flex;
+            justify-items:space-between;
+           
+        }
+        .img1{
+            position:relative;
+         }
+         
+        .text{
+            position: absolute;
+            bottom:2vw;
+            left:2vw;
+            font-size:200%;
+
+        }
+        a{
+            text-decoration: none;
+            color:black
+        }
+        .img2, .img3{
+            display:flex;
+            margin-left:15vw;
+            margin-right:10vw;
+            gap:5vw;
+        }
+        .text2{
+            line-height: 140%;
+        }
+        .bread{
+            letter-spacing: 0.5vw;
+        }
+        input{
+            width:80vw;
+            height:4vh;
+        }
+        .contactus{
+            margin-left:8vw;
+            margin-right:8vw;   
+        }
+        .footer{
+            background-color: antiquewhite;
+            width:100vw;
+            height:20vh;
+            align-content:center;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <a href="#catering"><b>Gourment au Catering</b></a>
+        <div  class="nav2">
+             <a href="#about"> About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="#menu"> Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="#contact"> Contact</a>
+
+        </div>
+    </nav>
+
+  <br>
+
+    <!-- catering -->
+    
+
+   <br>
+   <br>
+
+     <article id="catering">
+        <div class="img1">
+            <img src="https://www.w3schools.com/w3images/hamburger.jpg" width="100%" height="40%">
+            <div class="text">Le Catering</div>
+        </div>
+
+     </article>
+     <br><br>
+
+     <article id="about">
+        <div class="img2">
+            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg"  width="50%" height="60%">
+            <div class="text2">
+            
+                <b><h2>About Catering</h2></b><br>
+                <i>Tradition since 1889</i><br><br>
+                The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.
+            
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             </div>
+        </div>
+    </article>
+
+    <article id="menu">
+
+        <div><b><h1><center>Our Menu</center></h1></b></div>
+      <div class="img3">
+        <div class="text3">
+       
+        <p><h3 class="bread">Bread Basket</h3></p>
+        <h4 style="color:grey">Assortment of fresh baked fruit breads and muffins 5.50</h4>
+        <p><h3 class="bread">Honey Almond Granola with Fruits</h3></p>
+        <h4 style="color:grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</h4>
+        <p><h3 class="bread">Belgian Waffle</h3></p>
+        <h4 style="color:grey">Vanilla flavored batter with malted flour 7.50</h4>
+        <p><h3 class="bread">Scrambled eggs</h3></p>
+        <h4 style="color:grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</h4>
+        <p><h3 class="bread">Blueberry Pancakes</h3></p>
+        <h4 style="color:grey">With syrup, butter and lots of berries 8.50</h4>
+        </div>  
+        <img src="https://www.w3schools.com/w3images/tablesetting.jpg" width="50%" height="500vh">
+    </div>
+    </article>
+
+
+
+    <article id="contact">
+       <div class="contactus">
+        <h2>Contact</h2>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.  </p>
+        <p style="color:rgb(111, 147, 150)">Catering Service, 42nd Living St, 43043 New York, NY</p>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <input type="text" placeholder="Name"><br><br>
+
+        <input type="text" placeholder="How many people"><br><br>
+        <input type="date" placeholder=""><br><br>
+        <input type="text" placeholder="Message\Special requirements"><br><br>
+        <button>Send Message</button>
+      </div>
+    
+    </article>
+   
+    <center>
+    <p class="footer">Powered by <a href="https://www.w3schools.com/w3css/w3css_templates.asp">w3.css</a></p>
+     
+   </center>
+
+    
+</body>
+</html>

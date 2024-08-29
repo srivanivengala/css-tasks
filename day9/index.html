@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container, .parent{
+            display:flex;
+            gap:2vw;
+            justify-content: center;
+            
+        }
+        .main{
+            margin-top:25vw;
+            display:grid;
+            gap:2vw;
+        }
+        .scale1, .scale2, .scale3{
+            background-color:rgb(12, 190, 190);
+            width:20px;
+            height:20px;
+            border-radius: 50%;
+            animation-name:scaling;
+            animation-duration:1s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+        .trans1, .trans2, .trans3{
+            background-color:lightsalmon;
+            width:30px;
+            height:30px;
+            border-radius: 50%;
+            animation-name:translate;
+            animation-duration:1s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+
+        }
+      
+        .scale2{
+            animation-delay: 0.1s;
+        }
+        .scale3{
+            animation-delay:0.2s;
+        }
+        .trans2{
+            animation-delay: 0.2s;
+        }
+        .trans3{
+            animation-delay:0.4s;
+        }
+
+       
+         @keyframes scaling{ 
+            from{
+                transform:scale(1,1);
+                background-color: rgb(12, 190, 190);
+            }
+            to{
+                transform:scale(1.5,1.5);
+                background-color: rgb(3, 56, 56);
+            }
+        }
+        @keyframes translate{
+            0%{
+                transform:translateY(0px)
+            }
+            50%{
+                transform:translateY(-90px )
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="parent">
+        <div class="trans1"></div>
+        <div class="trans2"></div>
+        <div class="trans3"></div>
+    </div>
+    <div class="container">
+          <div class="scale1"></div>
+          <div class="scale2"></div>
+          <div class="scale3"></div>
+    </div>
+    </div>
+</body>
+</html>
